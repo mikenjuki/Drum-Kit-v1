@@ -46,15 +46,15 @@ const playSound = (key) => {
 };
 
 // Button animation on keydown
-// const buttonAnimation = (pressedKey) => {
-//   let currentBtn = document.querySelector("." + pressedKey);
+const buttonAnimation = (pressedKey) => {
+  let currentBtn = document.querySelector("." + pressedKey);
 
-//   currentBtn.classList.add("pressed");
+  currentBtn.classList.add("pressed");
 
-//   setTimeout(function () {
-//     currentBtn.classList.remove("pressed");
-//   }, 99);
-// };
+  setTimeout(function () {
+    currentBtn.classList.remove("pressed");
+  }, 99);
+};
 
 // Another way to loop over the buttons
 
