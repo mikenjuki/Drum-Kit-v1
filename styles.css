@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Fira+Code:wght@300&display=swap');
+
+:root {
+  --main-color: #DA0463;
+  --drum-border: #404B69;
+  --text-shadow: #DBEDF3;
+  --default-white: #ffffff;
+  --main-red: #ff0000;
+  --main-bg: #283149;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background-color: var(--main-bg);
+}
+
+h1 {
+  font-size: 5rem;
+  color: var(--text-shadow);
+  font-family: 'Allerta Stencil', sans-serif;
+  text-shadow: 3px 0 var(--main-color);
+}
+
+
+footer {
+  color: var(--text-shadow);
+  font-family: 'Allerta Stencil', sans-serif;
+}
+
+.w {
+  background-image: url(./images/crash.png);
+  background-repeat: no-repeat;
+  background-size: 130px;
+  background-position: 0px 20px;
+}
+
+.a {
+  background-image: url(./images/kick.png);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: 15px 30px;
+}
+
+.s {
+  background-image: url(./images/snare.png);
+  background-repeat: no-repeat;
+  background-size: 130px;
+  background-position: 0px 20px;
+}
+
+.d {
+  background-image: url(./images/tom1.png);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: 10px 30px;
+}
+
+.j {
+  background-image: url(./images/tom2.png);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: 10px 30px;
+}
+
+.k {
+  background-image: url(./images/tom3.png);
+  background-repeat: no-repeat;
+  background-size: 90px;
+  background-position: 18px 20px;
+}
+
+.l {
+  background-image: url(./images/tom4.png);
+  background-repeat: no-repeat;
+  background-size: 90px;
+  background-position: 18px 20px;
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: var(--main-red);
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 var(--text-shadow);
+  opacity: 0.5;
+}
+
+.red {
+  color: var(--main-red);
+}
+
+.drum {
+  outline: none;
+  cursor: pointer;
+  border: 10px solid var(--drum-border);
+  font-size: 5rem;
+  font-family: 'Fira Code', monospace;
+  line-height: 2;
+  font-weight: 900;
+  color: var(--main-color);
+  text-shadow: 3px 0 var(--text-shadow);
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: var(--default-white);
+}
